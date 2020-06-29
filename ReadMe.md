@@ -27,13 +27,13 @@
  
 	1. Scope. @Validated can use as class identifier. @Valid uses as parameter identifier.
 	2. @Valid validates the fields in Object, @Validated can do too. When validating parameters as requestparam or pathvariable, use @Validated will be better. 
-	3. When validation failed, @Valid will throw @MethodArgumentResolverException( something like this as a runtime exception, return response with 400 code.), @Validated throw javax.validation.ConnstraintValidation( Unhandled exception, 500 internal server exception). This to be fixed in Spring framework 5.3 M2(maybe),  [issue reported] (https://github.com/spring-projects/spring-framework/issues/23107) .
+	3. When validation failed, @Valid will throw @MethodArgumentResolverException( something like this as a runtime exception, return response with 400 code.), @Validated throw javax.validation.ConnstraintValidation( Unhandled exception, 500 internal server exception). This to be fixed in Spring framework 5.3 M2(maybe),  [issue reported](https://github.com/spring-projects/spring-framework/issues/23107) .
 	4. **TODO** reproduce the Binding exception
 
 ## TODO
 
-	1. Show execution path when @Validated and @Valid invoked.
-	2. Try @Inherited annotation for **extends**.
-	3. More validation annotation examples.
+ - Show execution path when @Validated and @Valid invoked.
+ - Try @Inherited annotation for **extends**.
+ - More validation annotation examples.
 	
 	
